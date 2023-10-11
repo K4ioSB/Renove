@@ -7,9 +7,689 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    min-width: 100%;
+}
 body {
     height: 100%;
     width: 100%;
     margin: 0;
+}
+.barraNavegacao {
+    background: #13436B;
+    z-index: 3;
+    box-shadow: 0 3px 6px #000000a1;
+    position: fixed;
+    width: 100%;
+    height: 120px;
+}
+
+.barraNavegacao .opcoesMenu {
+    width: 100%;
+}
+.logoRenove{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.linkLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkLogo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoTexto{
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tituloRenove{
+    font-size: 40px;
+    color: #B44401;
+}
+.subTituloRenove{
+    font-size: 10px;
+    /* color: #13436B; */
+}
+.barraNavegacao .logo {
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+    max-width: 130px;
+    background-color: #13436B;
+    border: 5px solid #B44401 ; 
+}
+
+.menu{
+    display: flex;
+
+}
+
+.opcoesMenu{
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    color: #ffffff;
+    margin: 30px;
+}
+.opcoesMenu a {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+}
+.conteudoOpcoesMenu{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+}
+.opcoes ul:first-child>li>a {
+    text-transform: uppercase;
+}
+.opcoes{
+    display: flex;
+}
+.opcoes li{
+    margin: 10px;
+}
+
+.solucoes:hover ul{
+    display: block;
+    
+}
+.opcoesSolucoes{
+    margin-top: 5px;
+    position: absolute;
+    background: #13436B;
+    box-shadow: 0 0 2px #000;
+    border: 2px solid #B44401;
+}
+ .solucoes ul {
+    display: none;
+}
+
+.opcao{
+    padding: 5px;
+    width: 100%;
+    transition: 1000ms;
+}
+
+.opcao:hover a{
+    color: rgb(180, 68, 1);
+}
+
+.setores:hover ul{
+    display: block;
+    
+}
+.opcoesSetores{
+    margin-top: 5px;
+    border: 2px solid #B44401;
+    position: absolute;
+    background: #13436B;
+    box-shadow: 0 0 2px #000;
+}
+.setores ul {
+    display: none;
+}
+
+.barraPesquisa {
+   margin-left: 10px;
+   background-color: rgb(180, 68, 1);
+   border-radius: 40px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 5px;
+
+}
+::-webkit-input-placeholder{
+   color: rgb(19, 67, 107);
+}
+.textoPesquisa{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    font-size: 15px;
+    color: white;
+    width: 0;
+    transition: .5s;
+}
+
+.botaoPesquisa{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+
+.barraPesquisa:hover > .textoPesquisa {
+    width: 240px;
+    padding: 0 6px;
+}
+.barraPesquisa:hover > .botaoPesquisa {
+    background: white;
+}
+.imagemSection{
+    background:linear-gradient(to right, rgba(180, 67, 1, 0.884), rgb(180, 68, 1)); 
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    text-align: left;
+    width: 100%;
+}
+.imgViewPort{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.imgContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.fundoImagem {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.conteudoPorCima {
+    color: white;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    z-index: 1; 
+}
+.conteudoPorCima h1{
+    font-weight: 300;
+    font-size: calc(1.5rem + 1.2vw);;
+}
+.tituloPorCima{
+    display: flex;
+    margin-left: 15%;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 80px;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.posImagem{
+    width: 100%;
+    background-color: rgb(19, 67, 107);
+    text-align: center;
+    color: white;
+}
+
+.textoPosImagem{
+    font-weight: 300;
+    padding: 40px;
+    font-size: 25px;
+}
+.conteudoSetores{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+.blocosSetores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.tituloSetores{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.blocos {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .bloco {
+    position: relative;
+    margin: 10px;
+    display: flex;
+    width: 200px;
+    height: 90px;
+    align-items: center; 
+  }
+  
+  .imagemBloco {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .imagemBloco img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .textoBloco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(180, 68, 1, 0.5);
+    z-index: 1;
+    box-sizing: border-box;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  
+  .botaoLink {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    background: none;
+    outline: none;
+    padding: 0;
+    width: 0;
+    height: 0;
+    transition: 0.4s;
+
+  }
+  .textoBloco p{
+    user-select: none;
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: 10px;
+  }
+  
+  .textoBloco a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    position: absolute;
+    
+  }
+  
+  .bloco:hover > .textoBloco {
+    height: 100%;
+  }
+  
+  .textoBloco:hover > .botaoLink {
+    width: 20px;
+    height: 20px;
+  }
+  .setasPosBlocos{
+    display: flex;
+    justify-content: center;
+
+  }
+  .conteudoPosBlocos{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    font-size: 15px;
+  }
+  .conteudoPosBlocos i{
+    margin: 10px;
+    color: rgb(19, 67, 107);
+
+  }
+  .posBlocos{
+    margin-top: 70px;
+    width: 100%;
+    background-color: rgb(180, 68, 1);
+    text-align: center;
+    color: white;
+}
+
+.textoPosBlocos{
+    font-weight: 300;
+    padding: 40px;
+    font-size: 15px;
+}
+
+.solucao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.solucao a{
+    text-decoration: none;
+    color: rgb(19, 67, 107);
+    font-weight: 900;
+    font-size: 15px;
+}
+.tituloSolucao{
+    margin-top: 30px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.setaContato{
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+}
+
+.textoSolucao{
+    margin: 10px;
+    width: 400px;
+    font-size: 13px;
+}
+.textoSolucao a{
+    display: flex;
+    margin-top: 10px;
+    
+}
+.imagemSolucao{
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+}
+.textoImagemSolucao img{
+    width: 100%;
+    height: 100%;
+    
+}
+.textoImagemSolucao{
+    margin-top: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+li { list-style-type: none; }
+
+
+.posIntervencoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    width: 100%;
+    background-color: rgb(180, 68, 1);
+    text-align: center;
+    color: white;
+}
+
+.textoPosIntervencoes{
+    font-weight: 300;
+    margin: 30px;
+    font-size: 15px;
+}
+.botaoIntervencoes{
+    display: flex;
+    border-radius: 9px;
+    border: none;
+    font-weight: 700;
+    padding: 10px 15px;
+}
+.botaoIntervencoes a{
+    text-decoration: none;
+    color:  rgb( 19, 67, 107);
+    font-size: 10px;
+   
+}
+.porqueRenove{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.porqueRenove div{
+    margin: 70px 70px 70px 70px;
+}
+
+.tituloPorqueRenove{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.paragrafoPorqueRenove{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.containerNecessidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f8f8f8;
+}
+.conteudoNecessidades{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conteudoNecessidades h1{
+    margin-top: 70px;
+    font-size: 15px;
+}
+.necessidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+}
+.necessidades a{
+    text-decoration: none;
+    width: 100%;
+}
+.necessidades strong {
+    color: #000;
+    font-weight: 700;
+    width: 100%;
+}
+.necessidades i {
+    width: 100%;
+    color: rgb(180, 68, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divisor{
+    display: flex;
+    align-items: center;
+}
+.necessidadesBlocos{
+    margin: 10px;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.necessidadesBlocos a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textoBlocoNecessidades{
+ 
+    width: 100%;
+    text-align: center;
+}
+
+.setaNecessidades{
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    transition: 600ms;
+}
+.setaNecessidades:hover{
+    background-color:  rgb(180, 68, 1);
+}
+.conteudoOferecemos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(19, 67, 107);
+}
+.conteudoOferecemos h1{
+    margin-top: 70px;
+    color: #fff;
+}
+ .oferecemos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px;
+ }
+ .oferecemos a{
+    text-decoration: none;
+    width: 100%;
+}
+.oferecemos strong {
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    width: 100%;
+}
+.oferecemos i {
+    width: 100%;
+    color: rgb(180, 68, 1);
+    display: flex;
+    justify-content: center;
+}
+.oferecemosBlocos{
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.oferecemosBlocos a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.textoBlocoOferecemos{
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.setaOferecemos{
+    width: 20px;
+    height: 20px;
+    border-radius: 30px;
+    transition: 600ms;
+}
+.setaOferecemos:hover{
+    background-color:  rgb(255, 255, 255);
+}
+
+
+footer {
+    background-color: #494949;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+footer,footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #fff;
+    opacity: .7;
+}
+
+footer h4 {
+    color: #fff;
+    font-size: 13px;
+}
+
+
+footer  a {
+    font-size: 12px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.linksFooter{
+    display: flex;
+    
+    display: flex;
+    justify-content: center;
+  
+}
+
+.colunasFooter{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    
+    
+}
+.solucoesFooter{
+    font-size: 5px;
+    margin: 10px;
+  
+}
+.setoresFooter{
+    font-size: 10px;
+    margin: 10px;
+
+}
+.tecnologias{
+    font-size: 5px;
+    margin: 10px;
+    
+}
+.linksUteis{
+    font-size: 5px;
+    margin: 10px;
+ 
 }
