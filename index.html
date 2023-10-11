@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <title>RENOVE</title>
   <meta name="description" content="Blog">
+  <link rel="icon" type="image/png" href="./Imagens/LogoRenove.svg">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="css/index.css" media="screen and (min-width: 1060px)">
   <link rel="stylesheet" href="css/indexMobile.css" media="screen and (max-width: 1050px)">
@@ -15,18 +16,25 @@
 <body>
   <header>
   <nav class="barraNavegacao">
-    <a href="index.html"><img src="Imagens/renoveLogoBranco.jpg" alt="Renove" id="logo" class="logo"></a>
+    <div class="logoRenove">
+      <div class="linkLogo">
+   <a href="index.html" ><img src="Imagens/LogoRenove.svg" alt="Renove" id="logo"  class="logo"></a>
+      </div>
+    <div class="logoTexto">
+    <h1 class="tituloRenove">RENOVE</h1>
+    <h3 class="subTituloRenove">SOLUÇÕES GEOTÉCNICAS</h3>
+    </div>
     <script>
-      const logo = document.querySelector(".logo");
+      const logo = document.querySelector(".logoRenove");
 
       window.addEventListener("scroll", () => {
         const scrollY = window.scrollY;
 
         // Define um ponto onde a imagem deve parar de diminuir (por exemplo, 200 pixels)
-        const stopPoint = 100;
+        const stopPoint = 35;
 
         // Calcula a escala com base na posição de rolagem
-        const scale = Math.max(1 - (scrollY / 100), 0.5); // Ajuste conforme necessário
+        const scale = Math.max(1 - (scrollY / 100), 0.7); // Ajuste conforme necessário
 
         // Calcula a posição vertical com base na posição de rolagem
         const translateY = Math.min(scrollY / 3, stopPoint);
@@ -35,6 +43,7 @@
         logo.style.transform = `scale(${scale}) translateY(-${translateY}px)`;
       });
     </script>
+     </div>
     <div class="menu">
       <div class="opcoesMenu">
         <span class="conteudoOpcoesMenu">
@@ -87,12 +96,12 @@
 <div class="conteudoPorCima">
   <div class="tituloPorCima">
   <div class="titulo">
-  <h1>
+  <h1><strong>
     Consolidamos<br>
     Levantamos<br>
     Preenchemos<br>
     Eliminamos Infiltrações<br>
-    Estabilizamos<br></h1>
+    Estabilizamos<br></strong></h1>
   </h1>
 </div>
 </div>
@@ -252,7 +261,7 @@
                       terrenos de fundação
                     </strong>
                   </div>
-                  <div><img class="setaNecessidades" src="Imagens/next-Marrom.svg" alt=""></div>
+                  <div><img class="setaNecessidades" src="Imagens/next-azul.svg" alt=""></div>
                 </a>
               </div>
               <div class="necessidadesBlocos"> <a href="">
@@ -264,7 +273,7 @@
                       de contenção
                     </strong>
                   </div>
-                  <div><img class="setaNecessidades" src="Imagens/next-Marrom.svg" alt=""></div>
+                  <div><img class="setaNecessidades" src="Imagens/next-azul.svg" alt=""></div>
                 </a>
               </div>
               <div class="necessidadesBlocos">
@@ -277,7 +286,7 @@
                       cavidades subterrâneas
                     </strong>
                   </div>
-                  <div><img class="setaNecessidades" src="Imagens/next-Marrom.svg" alt=""></div>
+                  <div><img class="setaNecessidades" src="Imagens/next-azul.svg" alt=""></div>
                 </a>
               </div>
             </div>
@@ -291,7 +300,7 @@
                       pavimentos e revestimentos
                     </strong>
                   </div>
-                  <div><img class="setaNecessidades" src="Imagens/next-Marrom.svg" alt=""></div>
+                  <div><img class="setaNecessidades" src="Imagens/next-azul.svg" alt=""></div>
                 </a>
               </div>
               <div class="necessidadesBlocos">
@@ -304,7 +313,7 @@
                       paredes e muros
                     </strong>
                   </div>
-                  <div><img class="setaNecessidades" src="Imagens/next-Marrom.svg" alt=""></div>
+                  <div><img class="setaNecessidades" src="Imagens/next-azul.svg" alt=""></div>
                 </a>
               </div>
               <div class="necessidadesBlocos"> <a href="">
@@ -314,7 +323,7 @@
                       Eliminar infiltrações
                     </strong>
                   </div>
-                  <div><img class="setaNecessidades" src="Imagens/next-Marrom.svg" alt=""></div>
+                  <div><img class="setaNecessidades" src="Imagens/next-azul.svg" alt=""></div>
                 </a>
               </div>
             </div>
