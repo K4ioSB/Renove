@@ -334,7 +334,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 10px;
+    padding: 5px;
     font-size: 10px;
   }
   
@@ -410,7 +410,7 @@ body {
 .textoSolucao{
     margin: 10px;
     width: 400px;
-    font-size: 13px;
+    font-size: 10px;
 }
 .textoSolucao a{
     display: flex;
@@ -419,7 +419,7 @@ body {
 }
 .imagemSolucao{
     width: 300px;
-    height: 150px;
+    height: 100px;
     margin: 10px;
 }
 .textoImagemSolucao img{
@@ -456,6 +456,7 @@ li { list-style-type: none; }
 }
 .botaoIntervencoes{
     display: flex;
+    margin-right: 20px;
     border-radius: 9px;
     border: none;
     font-weight: 700;
@@ -472,10 +473,11 @@ li { list-style-type: none; }
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 10px;
+    font-size: 10px;
 }
 .porqueRenove div{
-    margin: 70px 70px 70px 70px;
+    margin: 70px 30px 70px 30px;
 }
 
 .tituloPorqueRenove{
@@ -503,14 +505,14 @@ li { list-style-type: none; }
 }
 .conteudoNecessidades h1{
     margin-top: 70px;
-    font-size: 15px;
+    font-size: 10px;
 }
 .necessidades{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px;
+    margin: 10px;
 }
 .necessidades a{
     text-decoration: none;
@@ -520,6 +522,7 @@ li { list-style-type: none; }
     color: #000;
     font-weight: 700;
     width: 100%;
+    font-size: 10px;
 }
 .necessidades i {
     width: 100%;
@@ -533,9 +536,9 @@ li { list-style-type: none; }
     align-items: center;
 }
 .necessidadesBlocos{
-    margin: 10px;
-    width: 130px;
-    height: 130px;
+    margin-top: 30px;
+    width: 90px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -550,14 +553,13 @@ li { list-style-type: none; }
 }
 
 .textoBlocoNecessidades{
- 
     width: 100%;
     text-align: center;
 }
 
 .setaNecessidades{
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 30px;
     transition: 600ms;
 }
@@ -574,6 +576,7 @@ li { list-style-type: none; }
 .conteudoOferecemos h1{
     margin-top: 70px;
     color: #fff;
+    font-size: 10px;
 }
  .oferecemos{
     display: flex;
@@ -581,6 +584,7 @@ li { list-style-type: none; }
     align-items: center;
     flex-direction: row;
     margin: 10px;
+    
  }
  .oferecemos a{
     text-decoration: none;
@@ -648,30 +652,28 @@ footer a:hover {
 
 footer h4 {
     color: #fff;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 
 footer  a {
-    font-size: 12px;
+    font-size: 10px;
     text-decoration: none;
-    margin: 10px;
+    margin: 5px;
 }
 
 .linksFooter{
     display: flex;
-    
-    display: flex;
+
     justify-content: center;
   
 }
 
 .colunasFooter{
     display: flex;
-    margin: 10px;
+    margin: 5px;
     justify-content: center;
-    
-    
+    flex-direction: column;
 }
 .solucoesFooter{
     font-size: 5px;
@@ -680,7 +682,7 @@ footer  a {
 }
 .setoresFooter{
     font-size: 10px;
-    margin: 10px;
+    margin: 5px;
 
 }
 .tecnologias{
