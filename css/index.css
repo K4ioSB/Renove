@@ -101,10 +101,12 @@ body {
 }
 .opcoes{
     display: flex;
+    padding: 5px;
 }
 .opcoes li{
     margin: 10px;
 }
+
 
 .solucoes:hover ul{
     display: block;
@@ -116,6 +118,9 @@ body {
     background: #13436B;
     box-shadow: 0 0 2px #000;
     border: 2px solid #B44401;
+}
+.solucoes{
+    padding: 5px;
 }
  .solucoes ul {
     display: none;
@@ -131,7 +136,9 @@ body {
 .opcao:hover a{
     color: rgb(180, 68, 1);
 }
-
+.setores{
+    padding: 5px;
+}
 .setores:hover ul{
     display: block;
     
@@ -146,7 +153,15 @@ body {
 .setores ul {
     display: none;
 }
-
+.obras{
+    padding: 5px;
+}
+.pqRenove{
+    padding: 5px;
+}
+.contato{
+    padding: 5px;
+}
 .barraPesquisa {
    margin-left: 10px;
    background-color: rgb(180, 68, 1);
