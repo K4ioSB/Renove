@@ -29,7 +29,7 @@ body {
 .logoRenove{
     margin-left: 5%;
     position: absolute;
-    top: 20px;
+    top: 25px;
     display: flex;
     flex-direction: row;
     /* background-color: white;
@@ -100,6 +100,8 @@ body {
     text-transform: uppercase;
 }
 .opcoes{
+    justify-content: center;
+    align-items: center;
     display: flex;
     padding: 5px;
 }

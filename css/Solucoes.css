@@ -1,42 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    font-family: Montserrat, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body, html {
-    height: 100%;
-    width: 100%;
-    font-weight: 300;
-    margin: 0;
-
-}
-.imagemSection{
-    background:linear-gradient(to right, rgba(0, 0, 0, 0), rgba(61, 25, 1, 0.842)); /* Fundo branco com 50% de transparência */
-    display: block;
-    background-position: 50%;
+.imagemSectionSolucoes{
+    background:linear-gradient(to right, rgba(180, 67, 1, 0.884), rgb(180, 68, 1)); 
     background-size: cover;
-    height: 60vh;
+    height: 70vh;
     position: relative;
     text-align: left;
     width: 100%;
 }
-.imgViewPort{
+.imgViewPortSolucoes{
     position: absolute;
     height: 100%;
     left: 0;
     top: 0;
     width: 100%;
 }
-.imgContainer {
+.imgContainerSolucoes {
     width: 100%;
     height: 100%;
 }
 
-.fundoImagem {
+.fundoImagemSolucoes {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -44,19 +27,18 @@ body, html {
     z-index: -1; 
 }
 
-.conteudoPorCima {
+.conteudoPorCimaSolucoes {
     color: white;
     display: flex;
-    justify-content: center;
     height: 100%;
     width: 100%;
     z-index: 1; 
 }
-.conteudoPorCima h1{
+.conteudoPorCimaSolucoes h1{
     font-weight: 300;
-    font-size: calc(1.5rem + 1.2vw);
+    font-size: calc(1.5rem + 1.2vw);;
 }
-.tituloPorCima{
+.tituloPorCimaSolucoes{
     display: flex;
     margin-left: 15%;
     width: 100%;
@@ -65,151 +47,11 @@ body, html {
     padding-left: 20px;
     margin-top: 80px;
 }
-.titulo{
+.tituloSolucoes{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.barraNavegacao {
-    background: #fff;
-    z-index: 99999;
-    box-shadow: 0 3px 6px #00000029;
-    position: fixed;
-    width: 100%;
-}
-
-.barraNavegacao .opcoesMenu {
-    width: 100%;
-}
-
-.barraNavegacao .logo {
-    margin-left: 15%;
-    max-width: 150px;
-    position: absolute;
-    top: 25%;
-}
-
-
-.conteudoOpcoesMenu{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.opcoes ul{
-    display: flex;
-    justify-content: space-between;
-}
-.opcoes li{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px;
-    display: inline-block;
-    position: relative;
-}
-
-.opcoesMenu{
-    display: flex;
-    justify-content: center;
-    color: #707070;
-    padding: 30px 0;
-    margin-left: 20%;
-    width: calc(100% - 130px);
-}
-
-
-.opcoesMenu a {
-    color: #707070;
-    font-size: 15px;
-    text-decoration: none;
-}
-
-.opcoes ul:first-child>li>a {
-    text-transform: uppercase;
-}
-
-
-.solucoes:hover ul{
-    display: block;
-    
-}
-.opcoesSolucoes{
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 0 2px #000;
-
-}
- .solucoes ul {
-    display: none;
-}
-
-.opcao{
-    padding: 5px;
-    width: 100%;
-    transition: 1000ms;
-}
-
-.opcao:hover a{
-    color: rgb(61, 25, 1);
-}
-
-.setores:hover ul{
-    display: block;
-    
-}
-.opcoesSetores{
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 0 2px #000;
-}
-.setores ul {
-    display: none;
-}
-
-.barraPesquisa {
-   margin-left: 10px;
-   background-color: rgb(61, 25, 1);
-   border-radius: 40px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 5px;
-
-}
-::-webkit-input-placeholder{
-   color: rgb(155, 72, 8);
-}
-.textoPesquisa{
-    border: none;
-    background: none;
-    outline: none;
-    padding: 0;
-    font-size: 15px;
-    color: white;
-    width: 0;
-    transition: .5s;
-}
-
-.botaoPesquisa{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .5s;
-}
-
-
-.barraPesquisa:hover > .textoPesquisa {
-    width: 240px;
-    padding: 0 6px;
-}
-.barraPesquisa:hover > .botaoPesquisa {
-    background: white;
-}
-
 .problemas {
     display: flex;
     justify-content: center;
@@ -251,7 +93,7 @@ body, html {
 }
 
 .exemplosProblemasConteudo p {
-    color: rgb(151, 61, 2);
+    color: rgb(180, 68, 1);
     font-weight: 600;
     line-height: normal;
     padding: 15px;
@@ -279,7 +121,7 @@ body, html {
     padding: 12px;
 }
 .tituloRestauramos h2{
-    color:rgb(151, 61, 2);
+    color:rgb(180, 68, 1);
     font-weight: 300;
     font-size: calc(1.325rem + .9vw);
 }
@@ -306,7 +148,7 @@ body, html {
     align-items: center;
     margin-top: 70px;
     width: 100%;
-    background-color: rgb(61, 25, 1);
+    background-color: rgb(19, 67, 107);
     text-align: center;
     color: white;
 }
