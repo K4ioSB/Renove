@@ -15,6 +15,13 @@ body {
     margin: 0;
 }
 
+.buttonMobile{
+    display: none;
+    
+ }
+ .menuMobile{
+    display: none;
+ }
 .barraNavegacao {
     background: #13436B;
     z-index: 3;
@@ -107,6 +114,7 @@ body {
 }
 .opcoes li{
     margin: 10px;
+    font-weight: bold;
 }
 
 
