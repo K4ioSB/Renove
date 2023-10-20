@@ -19,25 +19,6 @@
       <h1 class="tituloRenove">RENOVE</h1>
       <h3 class="subTituloRenove">SOLUÇÕES GEOTÉCNICAS</h3>
       </div>
-      <script>
-        const logo = document.querySelector(".logoRenove");
-  
-        window.addEventListener("scroll", () => {
-          const scrollY = window.scrollY;
-  
-          // Define um ponto onde a imagem deve parar de diminuir (por exemplo, 200 pixels)
-          const stopPoint = 35;
-  
-          // Calcula a escala com base na posição de rolagem
-          const scale = Math.max(1 - (scrollY / 100), 0.7); // Ajuste conforme necessário
-  
-          // Calcula a posição vertical com base na posição de rolagem
-          const translateY = Math.min(scrollY / 3, stopPoint);
-  
-          // Aplica a transformação de escala e posição vertical à imagem
-          logo.style.transform = `scale(${scale}) translateY(-${translateY}px)`;
-        });
-      </script>
        </div>
       <div class="menu">
         <div class="opcoesMenu">
@@ -80,6 +61,52 @@
         </div>
       </div>
       </div>
+      <div class="botao"> 
+        <button class="buttonMobile" onclick="toggleMenu()">
+          <img src="../Imagens/bars-solid.svg" alt="">
+        </button>
+        
+      </div>
+    
+    <nav class="menuMobile" id="menuMobile">
+        <div class="opcoesMenuMobile">
+          <span class="conteudoOpcoesMenuMobile">
+            <ul class="opcoesMobile">
+              <li class="solucoesMobile">SOLUÇÕES <button  onclick="toggleOpcoesSolucoes()"><img src="../Imagens/caret-down-solid.svg" alt=""></button>
+                <ul class="opcoesSolucoesMobile" id="opcoesSolucoesMobile">
+                  <li class="opcaoMobile" ><a href="../solucoes/consolidar-terrenos-fundacao.html"role="menuitem">Consolidar terrenos de fundação</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/estabilizar-muros-contencao.html"role="menuitem">Estabilizar muros de contenção</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/preencher-cavidades-subterraneas.html"role="menuitem">Preencher cavidades subterrâneas</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/consolidar-elevar-pavimentos-revestimentos.html"role="menuitem">Consolidar e elevar pavimentos e revestimentos</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/reforcar-paredes-muros.html" role="menuitem">Reforçar paredes e muros</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/eliminar-infiltracoes.html" role="menuitem">Eliminar Infiltrações</a></li>
+                </ul>
+              </li>
+              <li class="setoresMobile" >SETORES<button  onclick="toggleOpcoesSetores()"><img src="../Imagens/caret-down-solid.svg" alt=""></button>
+                <ul class="opcoesSetoresMobile" id="opcoesSetoresMobile">
+                  <li class="opcaoMobile" ><a href="../setores/setor-portuario.html" role="menuitem">Portuário</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-ferroviario.html" role="menuitem">Ferroviário</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-aeroportuario.html" role="menuitem">Aeroportuário</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-industrial.html" role="menuitem">Industrial</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-sistemas-subterraneos.html" role="menuitem">Obras Subterrâneas</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-manutencao-rodoviaria.html" role="menuitem">Manutenção rodoviária</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-residencial.html" role="menuitem">Residencial</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-monumentos.html" role="menuitem">Monumentos</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-edificios-publicos.html" role="menuitem">Edifícios Públicos</a></li>
+                </ul>
+              </li>
+              <li class="obrasMobile" ><a href="../obras.html" role="menuitem">OBRAS</a></li>
+              <li class="pqRenoveMobile" ><a href="../porque-renove.html" role="menuitem">PORQUÊ RENOVE</a></li>
+              <li class="contatoMobile" ><a href="../contato.html" role="menuitem">CONTATO</a></li>
+            </ul>
+         
+          </span>
+        </div>
+          <div class="botaoFechar"> 
+          <button class="buttonMobileFechar" onclick="toggleMenu()">
+            <img src="../Imagens/circle-xmark-solid.svg" alt=""> </button>
+        </div>
+    </nav>
     </nav>
   </header>
   <section class="imagemSectionSolucoes">
@@ -100,30 +127,33 @@
   </section>
   <main>
     <section class="problemas">
-        <div class="conteinerProblemas">
-            <div class="conteudoProblemas">
-                <h1 class="tituloProblema">QUAL É O SEU PROBLEMA?</h1>
-                <div class="exemplosProblemas">
-                    <div class="exemplosProblemasConteudo">
-                        <img src="../imagens/ImagensSolucoes/Cavidades.png" alt="">
-                        <p>Preencher cavidades subterrâneas, tanques ou reservatórios debaixo ou perto de casas ou edifícios? Assegurar a integridade de uma estrutura assente numa cavidade subterrânea de origem antrópica ou natural?</p>
-                    </div>
-                    <div class="exemplosProblemasConteudo">
-                        <img src="../imagens/ImagensSolucoes/Depósitos.png" alt="">
-                        <p>Instabilidade de silos ou depósitos subterrâneos devido à presença de cavidades antropogénicas ou naturais?</p>
-                    </div>
-                    <div class="exemplosProblemasConteudo">
-                        <img src="../imagens/ImagensSolucoes/Preenchimento.png" alt="">
-                        <p>Preenchimento de condutas desativadas que ameaçam a estabilidade das estruturas superiores?</p>
-                    </div>
-                    <div class="exemplosProblemasConteudo">
-                        <img src="../imagens/ImagensSolucoes/Aterro.png" alt="">
-                        <p>Aligeirar um aterro ferroviário ou rodoviário?</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="conteinerProblemas">
+        <div class="conteudoProblemas">
+          <h1 class="tituloProblema">QUAL É O SEU PROBLEMA?</h1>
+          <div class="exemplos">
+          <div class="exemplosProblemas">
+              <div class="exemplosProblemasConteudo">
+                  <img src="../imagens/ImagensSolucoes/Cavidades.png" alt="">
+                  <p>Preencher cavidades subterrâneas, tanques ou reservatórios debaixo ou perto de casas ou edifícios? Assegurar a integridade de uma estrutura assente numa cavidade subterrânea de origem antrópica ou natural?</p>
+              </div>
+              <div class="exemplosProblemasConteudo">
+                  <img src="../imagens/ImagensSolucoes/Depósitos.png" alt="">
+                  <p>Instabilidade de silos ou depósitos subterrâneos devido à presença de cavidades antropogénicas ou naturais?</p>
+              </div>
+              </div>
+              <div class="exemplosProblemas">
+              <div class="exemplosProblemasConteudo">
+                  <img src="../imagens/ImagensSolucoes/Preenchimento.png" alt="">
+                  <p>Preenchimento de condutas desativadas que ameaçam a estabilidade das estruturas superiores?</p>
+              </div>
+              <div class="exemplosProblemasConteudo">
+                  <img src="../imagens/ImagensSolucoes/Aterro.png" alt="">
+                  <p>Aligeirar um aterro ferroviário ou rodoviário?</p>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
   </main>
   <footer>
     <section class="linksFooter">
@@ -248,5 +278,6 @@
       </div>
     </section>
   </footer>  
+  <script src="../Script.js"></script>
 </body>
 </html>

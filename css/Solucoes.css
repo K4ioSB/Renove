@@ -76,12 +76,24 @@
 .tituloProblema {
     font-weight: 300;
 }
-
+.exemplos{
+    display: flex;
+    justify-content: center;
+}
 .exemplosProblemas {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    width: 100%;
 
+
+}
+@media (max-width:1060px) {
+    .exemplos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
 }
 
 .exemplosProblemasConteudo {
@@ -92,11 +104,12 @@
     box-shadow: 0 0 9px #00000020;
 }
 
+
 .exemplosProblemasConteudo p {
     color: rgb(180, 68, 1);
     font-weight: 600;
     line-height: normal;
-    padding: 15px;
+    margin: 15px;
 }
 
 .exemplosProblemas img {
@@ -108,8 +121,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 46px;
-    padding: 12px;
+    margin: 40px;
+   
 }
 
 .conteudoRestauramos{
@@ -117,8 +130,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 46px;
-    padding: 12px;
+    margin: 40px;
+    
 }
 .tituloRestauramos h2{
     color:rgb(180, 68, 1);
@@ -139,7 +152,8 @@
     margin: 20px;
 }
 .imgRestauramos img {
-    height: 140px;
+    width: 100%;
+    height: auto;
 }
 
 .posRestauramos{
@@ -163,81 +177,12 @@
     border-radius: 9px;
     border: none;
     font-weight: 700;
-    padding: 10px 15px;
+    margin-right: 20px;
+    padding: 5px;
 }
 .botaoRestauramos a{
     text-decoration: none;
     color:  rgb(61, 25, 1);
     font-size: 1rem;
     padding: 5px;
-}
-footer {
-    background-color: #494949;
-    font-size: 10px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    overflow: hidden;
-}
-
-footer,footer a {
-    color: #fff;
-}
-
-footer a:hover {
-    color: #fff;
-    opacity: .7;
-}
-
-footer h4 {
-    color: #fff;
-    font-size: 13px;
-}
-
-
-footer  a {
-    font-size: 12px;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.linksFooter{
-    display: flex;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    padding-right: 20px;
-    padding-left: 20px;
-}
-
-.colunasFooter{
-    display: flex;
-    margin: 40px;
-    justify-content: center;
-    
-    
-}
-.solucoesFooter{
-    font-size: 13px;
-    margin: 20px;
-    padding-right: 80px;
-    padding-left: 50px;
-}
-.setoresFooter{
-    font-size: 13px;
-    margin: 20px;
-    padding-right: 80px;
-    padding-left: 50px;
-}
-.tecnologias{
-    font-size: 13px;
-    margin: 20px;
-    padding-right: 80px;
-    padding-left: 50px;
-}
-.linksUteis{
-    font-size: 13px;
-    margin: 20px;
-    padding-right: 80px;
-    padding-left: 50px;
 }
