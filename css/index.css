@@ -69,7 +69,7 @@ body {
 }
 .subTituloRenove{
     font-size: 10px;
-    /* color: #13436B; */
+   
 }
 .barraNavegacao .logo {
     width: 100%;
@@ -390,13 +390,13 @@ body {
   }
   .conteudoPosBlocos{
     display: flex;
-    align-items: center;
     margin: 5px;
   }
-  .conteudoPosBlocos i{
-    margin: 10px;
+  .conteudoPosBlocos img{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
     color: rgb(19, 67, 107);
-
   }
   .posBlocos{
     margin-top: 70px;
