@@ -77,15 +77,40 @@
 .contato{
     width: 100%;
     max-width: 600px; 
-    background-color:  #f7f7f7;
+    background-color:  rgb(235, 235, 235);
     border-radius: 10px;
     padding-left: 30px;
-   
+    margin: 20px;
 }
 .form{
     display: flex;
     flex-direction: column;
 }
+.nomeCampo{
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.linhaForm {
+    display: flex;
+    flex-direction: row;
+}
+.formasContato{
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+.telEmail{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+.telEmail input{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .field{
     padding: 10px;
     margin-bottom: 15px;

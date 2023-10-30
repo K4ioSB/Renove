@@ -151,56 +151,80 @@
 <div class="contato"> 
  
   <form enctype="multipart/form-data" class="form" method="post">
-    <input type="hidden" name="accessKey" value="48af7162-a878-418b-9b78-2dff73892c37">
-    <input type="hidden" name="redirectTo" value="">
-        <label class="Nome">Particular ou um profissional?*</label>
-        <select class="field" name="partProf" id="partProf">
+
+        <label style="margin: 10px 10px 0 10px;" class="Nome">Particular ou um profissional?*</label>
+        <select style="margin:0px 10px 0 10px" class="field" name="partProf" id="partProf">
             <option selected disabled value="">Selecione</option>
             <option  value="Particular">Particular</option>
             <option  value="Profissional">Profissional</option>
         </select>
+        <div class="linhaForm">
+          <div class="nomeCampo">
         <label class="nome">Nome</label>
         <input class="field"  type="text" name="nome" id="nome">
+          </div>
+          <div class="nomeCampo">
         <label class="nome">Apelido</label>
         <input class="field" type="text" name="apelido" id="apelido">
+        </div>
+        </div>
+        <div class="linhaForm">
+          <div class="nomeCampo">
         <label class="nome">E-mail</label>
         <input class="field"  type="email" name="email" id="email">
+        </div>
+        <div class="nomeCampo">
         <label class="nome">Telefone</label>
         <input class="field"  type="tel" name="telefone" id="telefone">
+      </div>
+        </div>
+        <div class="linhaForm">
+          <div class="nomeCampo">
         <label class="nome">Município</label>
         <input class="field"  type="text" name="municipio" id="municipio">
+      </div>
+        <div class="nomeCampo">
         <label class="nome">Distrito</label>
         <select class="field" name="distrito" id="distrito">
             <option selected disabled value="">Selecione</option>
             
         </select>
+      </div>
+      </div>
+      <div class="linhaForm">
+        <div class="nomeCampo">
         <label class="nome">Solicitação</label>
         <select class="field" name="solicitacao" id="solicitacao">
             <option selected disabled value="">Selecione</option>
             
         </select>
-        <label class="nome">O que Precisa?</label>
+      </div>
+        <div class="nomeCampo">
+        <label  class="nome">O que Precisa?</label>
         <select class="field" name="necessidade" id="necessidade">
             <option selected disabled value="">Selecione</option>
             
         </select>
-        <textarea class="field" placeholder="Descreva o seu problema." name="mensagem" id="mensagem" ></textarea>
-   
+      </div>
+        </div>
+        <textarea style="margin:0px 10px 0 10px;" class="field" placeholder="Descreva o seu problema." name="mensagem" id="mensagem" ></textarea>
+        <div class="formasContato">
         <label class="nome">Como prefere ser contactado?</label>
-        <div>
+        <div class="telEmail">
         <label for="">Telefone</label>
         <input type="checkbox"></input> 
         <label for="">Email</label>
         <input type="checkbox"></input>
         </div>
-        <label class="nome" for="">Carregar imagens</label>
-        <label class="nome" for="">Máximo 5 imagens</label>
-        <input class="field" name="arquivo" type="file" multiple="">  
-        <div>
-        <P>Eu confirmo que li e concordo com a política de privacidade.</P>
-        <input type="checkbox" name="" id=""></input><label for="">Autorizo que os meus dados possam ser utilizados pela Uretek para enviar informações de marketing sobre os seus produtos. Posso retirar o meu consentimento em qualquer altura, tal como descrito na política de privacidade. </label>
+      </div>
+        <label style="margin: 0 0 0 10px;" class="nome" for="">Carregar imagens</label>
+        <label class="nome" style="font-size: small; margin:0 0 10px 10px;" for="">Máximo 5 imagens</label>
+        <input style="margin:0px 10px 0 10px;background-color:white" class="field" name="arquivo" type="file" multiple="">  
+        <div style="margin: 10px;">
+        <P style="margin-bottom: 10px;">Eu confirmo que li e concordo com a política de privacidade.</P>
+        <input style="margin-right:10px;" type="checkbox" name="" id=""></input><label for="">Autorizo que os meus dados possam ser utilizados pela Uretek para enviar informações de marketing sobre os seus produtos. Posso retirar o meu consentimento em qualquer altura, tal como descrito na política de privacidade. </label>
         </div>
-        <input class="field" type="submit" value="Enviar">
+        <input  style="margin:0px 10px 10px 10px;background-color: white;" class="field" type="submit" value="Enviar">
   </form>
 </div>
 </section>
