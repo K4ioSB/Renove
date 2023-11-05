@@ -63,8 +63,20 @@
     display: flex;
     justify-content: center;
     position: relative;
+    margin: 20px;
     
 }
+@media (max-width:1060px) {
+
+    .conteudo-principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+}
+
 .titulo{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
@@ -75,12 +87,19 @@
 }
 
 .contato{
-    width: 100%;
-    max-width: 600px; 
+    width: 600px; 
     background-color:  rgb(235, 235, 235);
     border-radius: 10px;
-    padding-left: 30px;
     margin: 20px;
+}
+@media (max-width:1060px) {
+    .contato{
+        width: 400px; 
+        background-color:  rgb(235, 235, 235);
+        border-radius: 10px;
+        
+    }
+
 }
 .form{
     display: flex;
@@ -91,6 +110,14 @@
     margin: 10px;
     display: flex;
     flex-direction: column;
+}
+@media (max-width:1060px) {
+    .nomeCampo{
+        width: 180px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .linhaForm {
     display: flex;
@@ -134,16 +161,7 @@ textarea{
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 5px;
 }
-.imagem{
-    display: flex;
-    justify-content: center;
-}
-.imagem img{
-    border-radius: 10px;
-    width: 400px;
-    height: auto;
-    margin-top: 20px;
-}
+
 .rodape{
     color: white;
     display: flex;
