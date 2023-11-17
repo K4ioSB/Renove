@@ -30,7 +30,7 @@ body {
 
 .logoRenove {
     position: absolute;
-    top: 35px;
+    top: 60px;
     display: flex;
     flex-direction: row;
 }
@@ -57,12 +57,12 @@ body {
 }
 
 .tituloRenove {
-    font-size: 30px;
+    font-size: 40px;
     color: #B44401;
 }
 
 .subTituloRenove {
-    font-size: 10px;
+    font-size: 15px;
     /* color: #13436B; */
 }
 

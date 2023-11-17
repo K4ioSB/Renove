@@ -35,7 +35,7 @@ body {
 .logoRenove{
     margin-left: 5%;
     position: absolute;
-    top: 25px;
+    top: 60px;
     display: flex;
     flex-direction: row;
     /* background-color: white;
@@ -63,11 +63,11 @@ body {
     flex-direction: column;
 }
 .tituloRenove{
-    font-size: 40px;
+    font-size: 50px;
     color: #B44401;
 }
 .subTituloRenove{
-    font-size: 10px;
+    font-size: 20px;
    
 }
 .barraNavegacao .logo {
@@ -129,6 +129,7 @@ body {
     border: 2px solid #B44401;
 }
 .solucoes{
+    font-size: 20px;
     padding: 5px;
 }
  .solucoes ul {
@@ -146,6 +147,7 @@ body {
     color: rgb(180, 68, 1);
 }
 .setores{
+    font-size: 20px;
     padding: 5px;
 }
 .setores:hover ul{
@@ -162,13 +164,16 @@ body {
 .setores ul {
     display: none;
 }
-.obras{
+.obras a{
+    font-size: 20px;
     padding: 5px;
 }
-.pqRenove{
+.pqRenove a {
+    font-size: 20px;
     padding: 5px;
 }
-.contato{
+.contato a{
+    font-size: 20px;
     padding: 5px;
 }
 .barraPesquisa {

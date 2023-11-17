@@ -4,13 +4,13 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
   // Define um ponto onde a imagem deve parar de diminuir (por exemplo, 200 pixels)
-  const stopPoint = 35;
+  const stopPoint = 55;
 
   // Calcula a escala com base na posição de rolagem
-  const scale = Math.max(1 - (scrollY / 100), 0.7); // Ajuste conforme necessário
+  const scale = Math.max(1 - (scrollY / 100), 0.9); // Ajuste conforme necessário
 
   // Calcula a posição vertical com base na posição de rolagem
-  const translateY = Math.min(scrollY / 3, stopPoint);
+  const translateY = Math.min(scrollY / 8, stopPoint);
 
   // Aplica a transformação de escala e posição vertical à imagem
   logo.style.transform = `scale(${scale}) translateY(-${translateY}px)`;
