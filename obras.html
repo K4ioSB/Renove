@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-br">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+  <meta charset="utf-8">
+  <title>RENOVE</title>
+  <meta name="description" content="Blog">
+  <link rel="icon" type="image/png" href="./Imagens/LogoRenove.svg">
+  <link rel="stylesheet" href="css/index.css" media="screen and (min-width: 1271px)">
+  <link rel="stylesheet" href="css/indexMobile.css" media="screen and (max-width: 1270px)">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-language" content="pt">
+</head>
+<body>
+  
+  <header>
+    <nav class="barraNavegacao">
+      <div class="logoRenove">
+        <div class="linkLogo">
+     <a href="../index.html" ><img src="../Imagens/LogoRenove.svg" alt="Renove" id="logo"  class="logo"></a>
+        </div>
+      <div class="logoTexto">
+      <h1 class="tituloRenove">RENOVE</h1>
+      <h3 class="subTituloRenove">SOLUÇÕES GEOTÉCNICAS</h3>
+      </div>
+       </div>
+      <div class="menu">
+        <div class="opcoesMenu">
+          <span class="conteudoOpcoesMenu">
+            <ul class="opcoes">
+              <li class="solucoes"><strong>SOLUÇÕES</strong></a>
+                <ul class="opcoesSolucoes">
+                  <li class="opcao" role="none"><strong><a href="../solucoes/consolidar-terrenos-fundacao.html"role="menuitem">Consolidar terrenos de fundação</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../solucoes/estabilizar-muros-contencao.html"role="menuitem">Estabilizar muros de contenção</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../solucoes/preencher-cavidades-subterraneas.html"role="menuitem">Preencher cavidades subterrâneas</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../solucoes/consolidar-elevar-pavimentos-revestimentos.html"role="menuitem">Consolidar e elevar pavimentos e revestimentos</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../solucoes/reforcar-paredes-muros.html" role="menuitem">Reforçar paredes e muros</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../solucoes/eliminar-infiltracoes.html" role="menuitem">Eliminar Infiltrações</a></strong></li>
+                </ul>
+              </li>
+              <li class="setores"><strong>SETORES</strong>
+                <ul class="opcoesSetores">
+                  <li class="opcao" role="none"><strong><a href="../setores/setor-portuario.html" role="menuitem">Portuário</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../setores/setor-ferroviario.html" role="menuitem">Ferroviário</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../setores/setor-aeroportuario.html" role="menuitem">Aeroportuário</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../setores/setor-industrial.html" role="menuitem">Industrial</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../setores/setor-sistemas-subterraneos.html" role="menuitem">Obras Subterrâneas</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../setores/setor-manutencao-rodoviaria.html" role="menuitem">Manutenção rodoviária</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../setores/setor-residencial.html" role="menuitem">Residencial</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../setores/setor-monumentos.html" role="menuitem">Monumentos</a></strong></li>
+                  <li class="opcao" role="none"><strong><a href="../setores/setor-edificios-publicos.html" role="menuitem">Edifícios Públicos</a></strong></li>
+                </ul>
+              </li>
+              <li class="obras" role="none"><strong><a href="./obras.html" role="menuitem">OBRAS</a></strong></li>
+              <li class="pqRenove" role="none"><strong><a href="./porque-renove.html" role="menuitem">PORQUÊ RENOVE</a></strong></li>
+              <li class="contato" role="none"><strong><a href="./contato.html" role="menuitem">CONTATO</a></strong></li>
+              </ul>
+            <div class="barraPesquisa">
+              <input type="text" class="textoPesquisa" placeholder="Pesquisar">
+              <a href="#" class="botaoPesquisa">
+                <img src="../Imagens/loupe.png" alt="Lupa" height="15" width="15">
+              </a>
+            </div>
+          </span>
+        </div>
+      </div>
+      </div>
+      <div class="botao"> 
+        <button class="buttonMobile" onclick="toggleMenu()">
+          <img src="../Imagens/bars-solid.svg" alt="">
+        </button>
+        
+      </div>
+    
+    <nav class="menuMobile" id="menuMobile">
+        <div class="opcoesMenuMobile">
+          <span class="conteudoOpcoesMenuMobile">
+            <ul class="opcoesMobile">
+              <li class="solucoesMobile">SOLUÇÕES <button  onclick="toggleOpcoesSolucoes()"><img src="../Imagens/caret-down-solid.svg" alt=""></button>
+                <ul class="opcoesSolucoesMobile" id="opcoesSolucoesMobile">
+                  <li class="opcaoMobile" ><a href="../solucoes/consolidar-terrenos-fundacao.html"role="menuitem">Consolidar terrenos de fundação</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/estabilizar-muros-contencao.html"role="menuitem">Estabilizar muros de contenção</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/preencher-cavidades-subterraneas.html"role="menuitem">Preencher cavidades subterrâneas</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/consolidar-elevar-pavimentos-revestimentos.html"role="menuitem">Consolidar e elevar pavimentos e revestimentos</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/reforcar-paredes-muros.html" role="menuitem">Reforçar paredes e muros</a></li>
+                  <li class="opcaoMobile" ><a href="../solucoes/eliminar-infiltracoes.html" role="menuitem">Eliminar Infiltrações</a></li>
+                </ul>
+              </li>
+              <li class="setoresMobile" >SETORES<button  onclick="toggleOpcoesSetores()"><img src="../Imagens/caret-down-solid.svg" alt=""></button>
+                <ul class="opcoesSetoresMobile" id="opcoesSetoresMobile">
+                  <li class="opcaoMobile" ><a href="../setores/setor-portuario.html" role="menuitem">Portuário</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-ferroviario.html" role="menuitem">Ferroviário</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-aeroportuario.html" role="menuitem">Aeroportuário</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-industrial.html" role="menuitem">Industrial</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-sistemas-subterraneos.html" role="menuitem">Obras Subterrâneas</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-manutencao-rodoviaria.html" role="menuitem">Manutenção rodoviária</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-residencial.html" role="menuitem">Residencial</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-monumentos.html" role="menuitem">Monumentos</a></li>
+                  <li class="opcaoMobile" ><a href="../setores/setor-edificios-publicos.html" role="menuitem">Edifícios Públicos</a></li>
+                </ul>
+              </li>
+              <li class="obrasMobile" ><a href="../obras.html" role="menuitem">OBRAS</a></li>
+              <li class="pqRenoveMobile" ><a href="../porque-renove.html" role="menuitem">PORQUÊ RENOVE</a></li>
+              <li class="contatoMobile" ><a href="../contato.html" role="menuitem">CONTATO</a></li>
+            </ul>
+         
+          </span>
+        </div>
+          <div class="botaoFechar"> 
+          <button class="buttonMobileFechar" onclick="toggleMenu()">
+            <img src="../Imagens/circle-xmark-solid.svg" alt=""> </button>
+        </div>
+    </nav>
+    </nav>
+</header>
+<section class="imagemSection">
+  <div class="imgViewPort">
+  <div class="imgContainer">
+    <img class="fundoImagem" src="../Imagens/" alt="">
+  </div>
+</div>
