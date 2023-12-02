@@ -4,7 +4,7 @@ window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
 
   // Define um ponto onde a imagem deve parar de diminuir (por exemplo, 200 pixels)
-  const stopPoint = 55;
+  const stopPoint = 40;
 
   // Calcula a escala com base na posição de rolagem
   const scale = Math.max(1 - (scrollY / 100), 0.9); // Ajuste conforme necessário
